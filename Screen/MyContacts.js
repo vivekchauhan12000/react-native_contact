@@ -19,7 +19,7 @@ useEffect(()=>{
        if(permisssion==="granted"){
          const contacts=await Contacts.getAll();
          setMyContact(contacts);
-         console.log(MyContact);
+         //console.log(MyContact);
        }
    } catch (error) {
      console.log(error);
@@ -27,7 +27,7 @@ useEffect(()=>{
  }
 
   return (
-    <View>
+    <View style={styles.container}>
      
      <FlatList
         data={MyContact}
@@ -53,5 +53,14 @@ useEffect(()=>{
 export default MyContacts
 
 const styles = StyleSheet.create({
-
+container:{
+  flex:1,
+  backgroundColor:"white"
+},
+AddIcon:{
+  bottom:20,
+  right:20,
+  position:"absolute",
+  zIndex:1,
+}
 })

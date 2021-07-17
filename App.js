@@ -12,8 +12,8 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="MyContact">
-        <Stack.Screen name="MyContact" component={MyContact}/>
+      <Stack.Navigator initialRouteName="Contact List">
+        <Stack.Screen name="Contact List" component={MyContact}/>
         <Stack.Screen name="Profile" component={Profile}/>
         <Stack.Screen name="CreateContact" component={CreateContact}/>
       </Stack.Navigator>
